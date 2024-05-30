@@ -130,31 +130,31 @@ fc <- fit |>
 accuracy(fc, dTest) |> arrange(RMSE) |> 
     select(-MASE,-RMSSE,-MPE,-ACF1,-ME,-.type)
 ## Fitting and evaluating NNAR models
-# set.seed(2024)
-# fit <- dTrain |>
-#     model(NNAR_5 = NNETAR(value,n_nodes = 5, n_networks= 30, scale_inputs =TRUE),
-#     NNAR_10 = NNETAR(value,n_nodes = 10, n_networks= 30, scale_inputs =TRUE),
-#     NNAR_25 = NNETAR(value,n_nodes = 20, n_networks= 30, scale_inputs =TRUE),
-#     NNAR_50 = NNETAR(value,n_nodes = 20, n_networks= 30, scale_inputs =TRUE))
-# fc <- fit |> 
-#     forecast(h = nrow(dTest))
-# accuracy(fc, dTest) |> arrange(RMSE) |>
-#     select(-MASE,-RMSSE,-MPE,-ACF1,-ME,-.type) 
+set.seed(2024)
+fit <- dTrain |>
+    model(NNAR_5 = NNETAR(value,n_nodes = 5, n_networks= 30, scale_inputs =TRUE),
+    NNAR_10 = NNETAR(value,n_nodes = 10, n_networks= 30, scale_inputs =TRUE),
+    NNAR_25 = NNETAR(value,n_nodes = 20, n_networks= 30, scale_inputs =TRUE),
+    NNAR_50 = NNETAR(value,n_nodes = 20, n_networks= 30, scale_inputs =TRUE))
+fc <- fit |> 
+    forecast(h = nrow(dTest))
+accuracy(fc, dTest) |> arrange(RMSE) |>
+    select(-MASE,-RMSSE,-MPE,-ACF1,-ME,-.type) 
 ## Fitting all models
-# set.seed(2024)
-# fit <- dTrain |>
-#     model(Mean = MEAN(value),
-#     `Naïve` = NAIVE(value),
-#     SES = ETS(value),
-#     NNAR_5 = NNETAR(value,n_nodes = 5, n_networks= 30, scale_inputs =TRUE),
-#     ARIMA111 = ARIMA(value ~pdq(1,1,1)))
-# fc <- fit |>
-#     forecast(h = nrow(dTest))
-#     fabletools::accuracy(fc, dTest) %>% arrange(RMSE) %>%
-#     select(-MASE,-RMSSE,-MPE,-ACF1,-ME,-.type) 
+set.seed(2024)
+fit <- dTrain |>
+    model(Mean = MEAN(value),
+    `Naïve` = NAIVE(value),
+    SES = ETS(value),
+    NNAR_5 = NNETAR(value,n_nodes = 5, n_networks= 30, scale_inputs =TRUE),
+    ARIMA111 = ARIMA(value ~pdq(1,1,1)))
+fc <- fit |>
+    forecast(h = nrow(dTest))
+    fabletools::accuracy(fc, dTest) %>% arrange(RMSE) %>%
+    select(-MASE,-RMSSE,-MPE,-ACF1,-ME,-.type) 
 ## Evaluating all models visually
-# fc |> autoplot(dTest,level = NULL) +
-#     guides(colour = guide_legend(title = "Forecast Models"))
+fc |> autoplot(dTest,level = NULL) +
+    guides(colour = guide_legend(title = "Forecast Models"))
 ## Fitting and reporting the best model
 fitLast <- data |>
     model(ARIMA = ARIMA(value ~ pdq(1,1,1)))
