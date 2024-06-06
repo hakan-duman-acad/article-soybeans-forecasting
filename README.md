@@ -60,7 +60,8 @@ South ([2017](#ref-rnaturalearthdata-2017)),sf package version 1.0.14
 and sp package version 2.1.2 with contributions from Pebesma and Bivand
 ([2005](#ref-rnews-2005)) and Bivand, Pebesma, and Gomez-Rubio
 ([2013](#ref-asdar-2013)), Pebesma ([2018](#ref-sp-2018)) were employed.
-i \## Acknowledgements
+
+## Acknowledgements
 
 This analysis adapted and modified code from various sources, such as
 books, package manuals, vignettes, and GitHub repositories. The sources
