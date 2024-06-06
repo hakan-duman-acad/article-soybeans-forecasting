@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Abstract
 
 Turkey’s climate and soil are well-suited for oilseed crops, which are
@@ -101,8 +100,3 @@ Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy
 D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019.
 “Welcome to the <span class="nocase">tidyverse</span>.” *Journal of Open
 Source Software* 4 (43): 1686. <https://doi.org/10.21105/joss.01686>.
-=======
-
-
-
->>>>>>> f16e9f4457fb89ca6496a2a1b012c38ff62a6901
