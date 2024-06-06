@@ -1,3 +1,5 @@
+# Forecasting Soybean Production in Turkey: A Comparative Analysis of Automated and Traditional Methods
+
 ## Abstract
 
 Turkey’s climate and soil are well-suited for oilseed crops, which are
@@ -37,40 +39,64 @@ opportunities for collaboration or investment within the Turkish soybean
 industry.
 
 **Keywords:** Soybean production, Turkey, Time series forecasting, ARIMA
-algorithm,NNAR, Auto-ARIMA
+algorithm, NNAR, Auto-ARIMA
 
-## Packages
+## R Packages
 
 This study used the R statistical environment, version 4.2.2, developed
-by R Core Team ([2022](#ref-r2022)). The tidyverse meta-package, version
-2.0.0, created Wickham et al. ([2019](#ref-tidyverse2019)), was employed
-for data manipulation and cleaning. For time series data extension, the
-tsibble package (version 1.1.3), developed by Wang, Cook, and Hyndman
-([2020](#ref-tsibble2020)), was utilized. To build forecasting models,
-the fable package (version 0.3.3) created by O’Hara-Wild, Hyndman, and
-Wang ([2023a](#ref-fable2023)) was employed. For feature extraction and
-statistical analysis, the feasts package (version 0.3.1), developed by
-O’Hara-Wild, Hyndman, and Wang ([2023b](#ref-feasts2023)), was utilized.
-To create world maps, rnaturalearth version 0.3.4 by Massicotte and
-South ([2023](#ref-rnaturalearth2023)), rnaturalearthdata version 0.1.0
-by South ([2017](#ref-rnaturalearthdata2017)),sf package version 1.0.14
+by R Core Team ([2022](#ref-r-2022)). The tidyverse meta-package,
+version 2.0.0, created Wickham et al. ([2019](#ref-tidyverse-2019)), was
+employed for data manipulation and cleaning. For time series data
+extension, the tsibble package (version 1.1.3), developed by Wang, Cook,
+and Hyndman ([2020](#ref-tsibble-2020)), was utilized. To build
+forecasting models, the fable package (version 0.3.3) created by
+O’Hara-Wild, Hyndman, and Wang ([2023a](#ref-fable-2023)) was employed.
+For feature extraction and statistical analysis, the feasts package
+(version 0.3.1), developed by O’Hara-Wild, Hyndman, and Wang
+([2023b](#ref-feasts-2023)), was utilized. To create world maps,
+rnaturalearth version 0.3.4 by Massicotte and South
+([2023](#ref-rnaturalearth-2023)), rnaturalearthdata version 0.1.0 by
+South ([2017](#ref-rnaturalearthdata-2017)),sf package version 1.0.14
 and sp package version 2.1.2 with contributions from Pebesma and Bivand
-([2005](#ref-rnews_2005)) and Bivand, Pebesma, and Gomez-Rubio
-([2013](#ref-asdar2013)), were employed.
+([2005](#ref-rnews-2005)) and Bivand, Pebesma, and Gomez-Rubio
+([2013](#ref-asdar-2013)), Pebesma ([2018](#ref-sp-2018)) were employed.
+i \## Acknowledgements
 
-## Acknowledgements
+This analysis adapted and modified code from various sources, such as
+books, package manuals, vignettes, and GitHub repositories. The sources
+are cited as follows:
 
-This analysis includes code from various sources, such as books, package
-manuals, vignettes, and GitHub repositories. The sources are cited as
-follows:
+-   Data preparing, manipulation, cleaning, and visualization: Wickham
+    et al. ([2019](#ref-tidyverse-2019)), Wang, Cook, and Hyndman
+    ([2020](#ref-tsibble-2020)), Wang and contibutors
+    ([2024](#ref-tsibble-2024-github)),
+-   Map Visualization: Massicotte and South
+    ([2023](#ref-rnaturalearth-2023)), South
+    ([2017](#ref-rnaturalearthdata-2017)), Pebesma and Bivand
+    ([2005](#ref-rnews-2005)), Bivand, Pebesma, and Gomez-Rubio
+    ([2013](#ref-asdar-2013)), Pebesma and contibutors
+    ([2024](#ref-sf-2024-github))
+-   Forecasting Models, Feature Extraction: Hyndman
+    ([2021](#ref-hyndman-2021)), O’Hara-Wild, Hyndman, and Wang
+    ([2023a](#ref-fable-2023)), O’Hara-Wild, Hyndman, and Wang
+    ([2023b](#ref-feasts-2023)), O’Hara-Wild and contibutors
+    ([2024](#ref-fable-2024-github))
 
-Bivand, Roger S., Edzer Pebesma, and Virgilio Gomez-Rubio. 2013.
+## Code References
+
+Bivand, Roger S., Edzer J Pebesma, and Virgilio Gomez-Rubio. 2013.
 *Applied Spatial Data Analysis with R, Second Edition*. Springer, NY.
 <https://asdar-book.org/>.
+
+Hyndman, R J. 2021. *Forecasting: Principles and Practice*. 3rd ed.
+Melbourne, Australia: OTexts.
 
 Massicotte, Philippe, and Andy South. 2023. *Rnaturalearth: World Map
 Data from Natural Earth*.
 <https://CRAN.R-project.org/package=rnaturalearth>.
+
+O’Hara-Wild, Mitchell, and contibutors. 2024. “Tidyverts/Fable.” 2024.
+<https://github.com/tidyverts/fable>.
 
 O’Hara-Wild, Mitchell, Rob Hyndman, and Earo Wang. 2023a. *Fable:
 Forecasting Models for Tidy Time Series*.
@@ -79,9 +105,16 @@ Forecasting Models for Tidy Time Series*.
 ———. 2023b. *Feasts: Feature Extraction and Statistics for Time Series*.
 <https://CRAN.R-project.org/package=feasts>.
 
-Pebesma, Edzer J., and Roger Bivand. 2005. “Classes and Methods for
+Pebesma, Edzer J. 2018. “<span class="nocase">Simple Features for R:
+Standardized Support for Spatial Vector Data</span>.” *The R Journal* 10
+(1): 439–46. <https://doi.org/10.32614/RJ-2018-009>.
+
+Pebesma, Edzer J, and Roger Bivand. 2005. “Classes and Methods for
 Spatial Data in R.” *R News* 5 (2): 9–13.
 <https://CRAN.R-project.org/doc/Rnews/>.
+
+Pebesma, Edzer J, and contibutors. 2024. “Simple Features for R.” 2024.
+<https://r-spatial.github.io/sf/>.
 
 R Core Team. 2022. *R: A Language and Environment for Statistical
 Computing*. Vienna, Austria: R Foundation for Statistical Computing.
@@ -90,6 +123,9 @@ Computing*. Vienna, Austria: R Foundation for Statistical Computing.
 South, Andy. 2017. *Rnaturalearthdata: World Vector Map Data from
 Natural Earth Used in ’Rnaturalearth’*.
 <https://CRAN.R-project.org/package=rnaturalearthdata>.
+
+Wang, Earo, and contibutors. 2024. “Tidyverts/Tsibble.” 2024.
+<https://github.com/tidyverts/tsibble>.
 
 Wang, Earo, Dianne Cook, and Rob J Hyndman. 2020. “A New Tidy Data
 Structure to Support Exploration and Modeling of Temporal Data.”
