@@ -1,5 +1,11 @@
 # Forecasting Soybean Production in Turkey: A Comparative Analysis of Automated and Traditional Methods
 
+The full text of the article related to this study can be accessed via the following link: <https://dergipark.org.tr/en/pub/iutbd/issue/85235/1494324>
+
+Please cite this study if you use it in your research as follows:
+
+Duman, H. (2024). Forecasting Soybean Production in Turkey: A Comparative Analysis of Automated and Traditional Methods. Agro Science Journal of Igdir University, 2(1), 90-102.
+
 ## Abstract
 
 Turkey’s climate and soil are well-suited for oilseed crops, which are
@@ -67,17 +73,17 @@ This analysis adapted and modified code from various sources, such as
 books, package manuals, vignettes, and GitHub repositories. The sources
 are cited as follows:
 
--   Data preparing, manipulation, cleaning, and visualization: Wickham
+- Data preparing, manipulation, cleaning, and visualization: Wickham
     et al. ([2019](#ref-tidyverse-2019)), Wang, Cook, and Hyndman
     ([2020](#ref-tsibble-2020)), Wang and contibutors
     ([2024](#ref-tsibble-2024-github)),
--   Map Visualization: Massicotte and South
+- Map Visualization: Massicotte and South
     ([2023](#ref-rnaturalearth-2023)), South
     ([2017](#ref-rnaturalearthdata-2017)), Pebesma and Bivand
     ([2005](#ref-rnews-2005)), Bivand, Pebesma, and Gomez-Rubio
     ([2013](#ref-asdar-2013)), Pebesma and contibutors
     ([2024](#ref-sf-2024-github))
--   Forecasting Models, Feature Extraction: Hyndman
+- Forecasting Models, Feature Extraction: Hyndman
     ([2021](#ref-hyndman-2021)), O’Hara-Wild, Hyndman, and Wang
     ([2023a](#ref-fable-2023)), O’Hara-Wild, Hyndman, and Wang
     ([2023b](#ref-feasts-2023)), O’Hara-Wild and contibutors
