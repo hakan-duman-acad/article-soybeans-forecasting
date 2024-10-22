@@ -6,7 +6,7 @@ Eğer araştırmanızda bu çalışmayı kullanırsanız, lütfen aşağıdaki �
 
 Duman, H. (2024). Forecasting Soybean Production in Turkey: A Comparative Analysis of Automated and Traditional Methods. Agro Science Journal of Igdir University, 2(1), 90-102.
 
-## Abstract
+## Özet
 
 Türkiye'nin iklim ve toprağı, çeşitli endüstriler ve insan-hayvan beslenmesi için hayati önem taşıyan yağlı tohum bitkilerinin yetiştirilmesi için oldukça uygun koşullara sahiptir. Yağlı tohumlar arasında baklagil ailesine mensup soya fasulyesi, kendine özgü bir besin profiline sahiptir. Mevcut araştırmalar Türkiye'deki soya fasulyesi üretimini kapsasa da, bu çalışma: a) en doğru modeli belirlemek için farklı tahmin algoritmaları kullanarak üretim seviyelerini değerlendirmeyi ve b) seçilen modele dayanarak gelecekteki üretimi tahmin etmeyi ve Türkiye'deki soya fasulyesi endüstrisinin mevcut ve gelecekteki girişimcilik potansiyelini değerlendirmeyi amaçlamaktadır.
 
@@ -16,11 +16,11 @@ ARIMA (1,1,1) modeli, 2023-2032 yılları arasında üretimde düz bir eğilim t
 
 **Keywords:** Soya üretimi, Turkiye, Zaman Serisi Tahmini, ARIMA, NNAR, Auto-ARIMA
 
-## R Packages
+## R Paketleri
 
 Bu çalışmada, R Core Team tarafından geliştirilen R istatistik ortamı, sürüm 4.2.2'yi (2022) kullanılmıştır. Veri manipülasyonu ve temizliği için Wickham ve ark. tarafından oluşturulan tidyverse meta paketi, sürüm 2.0.0 (2019), zaman serisi veri uzantısı için Wang, Cook ve Hyndman tarafından geliştirilen tsibble paketi (sürüm 1.1.3) (2020), tahmin modelleri oluşturmak için O'Hara-Wild, Hyndman ve Wang tarafından oluşturulan fable paketi (sürüm 0.3.3) (2023a), özellik çıkarma ve istatistiksel analiz için O'Hara-Wild, Hyndman ve Wang tarafından geliştirilen feasts paketi (sürüm 0.3.1) (2023b), dünya haritaları oluşturmak için Massicotte ve South tarafından geliştirilen rnaturalearth sürüm 0.3.4 (2023), South tarafından geliştirilen rnaturalearthdata sürüm 0.1.0 (2017), sf paketi sürüm 1.0.14 ve sp paketi sürüm 2.1.2 (2005) (Bivand, Pebesma ve Gomez-Rubio, 2013; Pebesma 2018) tercih edilmiştir.
 
-## Acknowledgements
+## Teşekkürler
 
 Bu analiz, kitaplar, paket kılavuzları, vignettes ve GitHub depoları gibi çeşitli kaynaklardan uyarlanan ve değiştirilen kodlardan yaralanmıştır. Kaynaklar aşağıdaki gibi atıf yapılmaktadır:
 
