@@ -1,5 +1,8 @@
 # Forecasting Soybean Production in Turkey: A Comparative Analysis of Automated and Traditional Methods
 
+This is the English version of the README file.  
+For the Turkish version, click [here](README-tr.md).
+
 The full text of the article related to this study can be accessed via the following link: <https://dergipark.org.tr/en/pub/iutbd/issue/85235/1494324>
 
 Please cite this study if you use it in your research as follows:
