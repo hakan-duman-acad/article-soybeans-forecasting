@@ -32,7 +32,7 @@ m49 <- read_delim(file = "./data/m49.csv") # M49 codes
 plotMap <- function(item, element, data = soybeans, year = 2022, unit = 1000, labs = "", tmatrix = FALSE) {
     if (tmatrix) {
         tmp <- soybeans_matrix  |> 
-        filter( Year == 2022) |>
+        filter( Year == year) |>
         select(Element,Unit,Item,Value,`Partner Country Code (M49)`) |> 
         rename(ac = `Partner Country Code (M49)`)  |>
         mutate(ac = as.numeric(ac))  |>
