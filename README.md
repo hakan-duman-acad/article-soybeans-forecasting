@@ -9,6 +9,8 @@ Please cite this study if you use it in your research as follows:
 
 Duman, H. (2024). Forecasting Soybean Production in Turkey: A Comparative Analysis of Automated and Traditional Methods. Agro Science Journal of Igdir University, 2(1), 90-102.
 
+DOI: <https://doi.org/10.5281/zenodo.23835241>
+
 ## Abstract
 
 Turkey’s climate and soil are well-suited for oilseed crops, which are
