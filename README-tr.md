@@ -9,6 +9,9 @@ Eğer araştırmanızda bu çalışmayı kullanırsanız, lütfen aşağıdaki �
 
 Duman, H. (2024). Forecasting Soybean Production in Turkey: A Comparative Analysis of Automated and Traditional Methods. Agro Science Journal of Igdir University, 2(1), 90-102.
 
+Kod ve verinin kalıcı arşivi: <https://doi.org/10.5281/zenodo.23835241>
+DOI:  
+
 ## Özet
 
 Türkiye'nin iklim ve toprağı, çeşitli endüstriler ve insan-hayvan beslenmesi için hayati önem taşıyan yağlı tohum bitkilerinin yetiştirilmesi için oldukça uygun koşullara sahiptir. Yağlı tohumlar arasında baklagil ailesine mensup soya fasulyesi, kendine özgü bir besin profiline sahiptir. Mevcut araştırmalar Türkiye'deki soya fasulyesi üretimini kapsasa da, bu çalışma: a) en doğru modeli belirlemek için farklı tahmin algoritmaları kullanarak üretim seviyelerini değerlendirmeyi ve b) seçilen modele dayanarak gelecekteki üretimi tahmin etmeyi ve Türkiye'deki soya fasulyesi endüstrisinin mevcut ve gelecekteki girişimcilik potansiyelini değerlendirmeyi amaçlamaktadır.
